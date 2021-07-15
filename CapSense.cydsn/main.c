@@ -59,7 +59,7 @@
 /* Uncomment the following line to enable the tuner. Disabling the tuner allows
  * the project to operate in a stand-alone fashion without connecting
  * the I2C tuning interface */
-//#define ENABLE_TUNER
+#define ENABLE_TUNER
 
 uint16 sliderPosition = NO_FINGER;
 uint16 lastPosition = NO_FINGER;
@@ -74,7 +74,7 @@ int main()
 	/* Start all the components */
 	Clock_Start();
 	PWM_Start();
-
+   
 	#ifdef ENABLE_TUNER
 		CapSense_TunerStart();
 	#else
@@ -88,7 +88,7 @@ int main()
 	{
 		#ifdef ENABLE_TUNER
 			CapSense_TunerComm();
-			UpdateRGB();
+	            	UpdateRGB();
 		#else
 			/* Update all baselines */
 			CapSense_UpdateEnabledBaselines();
