@@ -1,0 +1,24 @@
+# ignore All
+/*
+!.gitignore
+
+# exception .c .h .cydwr .cyprj
+!/CapSense.cydsn
+/CapSense.cydsn/*
+!/CapSense.cydsn/*.c
+!/CapSense.cydsn/*.s
+!/CapSense.cydsn/*.h
+!/CapSense.cydsn/*.cydwr
+!/CapSense.cydsn/*.cyprj
+
+# exception .cysch
+!/CapSense.cydsn/TopDesign
+/CapSense.cydsn/TopDesign/*
+!/CapSense.cydsn/TopDesign/*.cysch
+
+#exception .hex
+!/CapSense.cydsn/CortexM0
+/CapSense.cydsn/CortexM0/*
+!/CapSense.cydsn/CortexM0/ARM_GCC_541
+/CapSense.cydsn/CortexM0/ARM_GCC_541/Debug/*
+!/CapSense.cydsn/CortexM0/ARM_GCC_541/Debug/*.hex
